@@ -1,3 +1,18 @@
+<?php
+include_once('inc/connection.php');
+
+$allquery="SELECT * FROM clients";
+$allresult=mysqli_query($connection,$allquery);
+$numberofplayers=mysqli_num_rows($allresult);
+
+$alisequery="SELECT * FROM aliases";
+$aliseresult=mysqli_query($connection,$alisequery);
+$numberofalises=mysqli_num_rows($aliseresult);
+
+
+
+ ?>
+
 <!DOCTYPE html>
 <html lang='en'>
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
